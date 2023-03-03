@@ -20,7 +20,7 @@ export const Sidebar = ({className}: SidebarProps): JSX.Element => {
             <button onClick={onToggle}>Pew pew</button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
-                <LangSwitcher />
+                <LangSwitcher className={cls.lang} />
             </div>
         </div>
     );
