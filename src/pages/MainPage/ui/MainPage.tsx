@@ -1,13 +1,20 @@
-import { useTranslation } from 'react-i18next';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { BugButton } from 'app/providers/ErrorBoundary';
+import { useTranslation } from 'react-i18next';
+import React from 'react';
+import cls from './MainPage.module.scss';
 
-const MainPage = () => {
+interface MainPageProps {
+    className?: string;
+}
+
+export const MainPage = ({ className }: MainPageProps) => {
     const { t } = useTranslation('main');
-
     return (
-        <div>
+        <div className={classNames(cls.MainPage, {}, [className])}>
+            <div>{t('Главная страница')}</div>
             <BugButton />
-            {t('Главная страница')}
+            <div>{navigator.userAgent}</div>
         </div>
     );
 };
