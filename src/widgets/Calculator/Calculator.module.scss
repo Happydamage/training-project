@@ -1,0 +1,47 @@
+.Calculator {
+  background: dimgray;
+  width: 30rem;
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.controlPanel {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  padding-bottom: .5rem;
+}
+
+.history {
+  height: 7rem;
+  background: #e8e8ea;
+  color: #0232c2;
+  padding: 1rem;
+  margin-top: .5rem;
+}
+
+.data {
+  height: 3rem;
+  background: white;
+}
+
+.btns {
+  display: flex;
+  background: #e8e8ea;
+  padding: 1rem;
+  //gap: .5rem;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
